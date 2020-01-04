@@ -11,44 +11,11 @@ var lossesText = document.getElementById("losses-text");
 var remainingText = document.getElementById("remaining-text");
 var playerguessText = document.getElementById("playerguess-text");
 
-//Functions//
+//countsdown the number of guess the player has used//
+for (i=0; i<10; i++) { 
+    console.log(i+1);
+}
 
-//Function is run whenever the user presses a key.//
-document.onkeyup = functon(event)
-
-    //determines which key was pressed.//
-    var playerGuess = event.key;
-    
-    //Generates a random number 0-9. This is the computers secret number//
-    function randomNumber(){
-    var random = Math.ceil(Math.random()*10);
-    return random;
-    }
-
-    for(i=0; i<10; i++){
-        console.log(i);
-    }
-
-    //Statements determine the outcome of the game//
-    function checkPlayerGuess(){
-        if (playerGuess < computerGuess){
-            losses++;
-        }else if (playerGuess > computerGuess){
-            losses++;
-        }else{
-            wins++;
-        }
-    
-    }
-
-
-
-    //Display the results of the game//
-    function displayPlayerOutcome(){
-        winsText.textContent = "Wins: " + wins;
-        lossesText.textContent = "Losses: " + losses;
-
-
-    }
+var secretNumber =  Math.ceil(Math.random()) * 10;
 
 
