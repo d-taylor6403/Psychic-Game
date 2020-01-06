@@ -3,32 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Are You A Pyschic?</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    
-    
 </head>
+
 <body>
+    <!--Jumbotron Header-fills the entire space horizontally-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Are You a Psychic?</h1>
+          <p class="lead">Take This Test To Find Out</p>
+        </div>
+      </div>
 
-    <!--Main div containing the header and javascript game-->
-    <div id="main-container">
-        <h1>Are You a Psychic?</h1>
-        <h3>Take This Test To Find Out</h3>
-        <hr>
+    
+    <!--Main div containing image and javascript game-->
+    <div class ="container">
+        <div class="row">
+            <img src="assets/images/pyschic-babe.jpg" alt="Let's Test Your Psychic Skills!">
+            <hr>
+        </div>
 
-        <img src="assets/images/pyschic-babe.jpg" alt="Let's Test Your Psychic Skills!">
+        <div class ="row">
+            <h4> I'm Thinking of a Letter. Can you guess which one?</h4>
+        </div>
 
-        <p> I'm Thinking of a Letter. Can you guess which one?</p>
+        <div class="row">
 
-        <p id="winCount">Wins: </p>
-        <p id="lossCount">Losses: </p>
-        <p id="guessesRemaining">Guesses Left: 10 </p>
-        <p id="guessedLetters">Your Guesses So Far: 0</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <p id="winCount">Wins: </p>
+            </div>
+
+            <div class="col-md-3">
+                <p id="lossCount">Losses: </p>
+            </div>
+
+            <div class="col-md-3">
+                <p id="guessesRemaining">Guesses Left: 10 </p>
+            </div>
+
+            <div class="col-md-3">
+                <p id="guessedLetters">Your Guesses So Far: 0</p>
+            </div>
+
+
+        </div>
+
+        
     </div>
 
-
+    <!--Sticky Footer-->
+    <div class ="row">
+        <footer class="footer">
+        <div class="footcontain">
+            <span class="text-muted">&copy; Designed by D.Taylor</span>
+        </div>
+        </footer>   
+    </div>
     
 </body>
 
+<!--Link to Javascript-->
 <script src="assets/javascript/game.js"></script>
 
 </html>
